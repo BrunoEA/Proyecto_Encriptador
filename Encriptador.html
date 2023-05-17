@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styleE.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <body>
+
+<div class="contenedor-total">
+
+        <header>
+            <div class="logo">
+                <img class="Vector" src="imagenes/Vector.png" > 
+                <h1>
+                    Desafio Encriptador
+                </h1>
+            </div>
+        </header>
+        
+        
+        <main>
+            <form>
+                <section class="barratexto-ingreso">
+                    <textarea id="texto" class="input-texto" placeholder="Ingrese el texto aquí" ></textarea>
+                </section>
+            </form>
+           
+            
+            <div class="resultado">
+
+                <div class="contenedor_resultado" >
+                    <div class="contenido_no_resuelto" id="noResuelto">
+                        <div class="cuadro-imagen">
+                            <img src="imagenes/Muñeco.png" alt="Imagen muñeco">
+                        </div>
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        
+                    </div>    
+                    
+                    <div class="contenido_resuelto" id = "resuelto">
+                        <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                        
+                    </div>
+                    
+                </div>
+                <div class="botoncopiar">
+                    <button id="copiar" type="button"> Copiar</button>
+                </div>  
+                    
+            </div>
+            <div class="info">
+                <img src="imagenes/signoExclamacion.png">
+                <p id="advertencia">Solo letras minúsculas</p>
+            </div>
+
+            <section class="botones">
+               
+                <button id="encriptador" class="boton_En" type="button">Encriptar</button>
+                <button id="desencriptador" class="boton_Des" type="button"> Desencriptar</button>
+            </section>
+        </main>
+        
+</div>
+    </body>
+    <footer>
+        <p class="copyright">© Creado por <a href="https://github.com/BrunoEA" target="_blank" rel="noopener noreferrer">Bruno Aguilar</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</html>
